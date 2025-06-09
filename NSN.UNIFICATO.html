@@ -1,0 +1,69 @@
+
+<div style="background-color: #f2f2f2; padding: 10px; text-align: center;">
+  <a href="index.html">🏠 Home</a> |
+  <a href="resoconto.html">💰 Resoconto</a> |
+  <a href="banca-dati.html">📊 Banca Dati</a> |
+  <a href="spiegazioni.html">🧠 Spiegazioni IA</a>
+</div>
+<hr>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>NSN - Pulsanti Extra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .button {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<button class="button" onclick="toggleContent('spiegazioni')">🧠 Spiegazioni IA</button>
+<div id="spiegazioni" class="content">
+    <p>Qui troverai tutte le spiegazioni dettagliate delle analisi IA.<br>
+    Ogni spiegazione include: contesto del match, forma squadra, motivazioni, valore atteso, e analisi delle quote.</p>
+</div>
+
+<button class="button" onclick="toggleContent('resoconto')">💰 Resoconto</button>
+<div id="resoconto" class="content">
+    <p>Sezione dedicata al riepilogo delle giocate effettuate: vincenti, perdenti, importi e profitti. Il bilancio viene aggiornato dopo ogni giornata.</p>
+</div>
+
+<button class="button" onclick="toggleContent('quote')">📚 Analisi Quote</button>
+<div id="quote" class="content">
+    <p>In questa sezione troverai l'analisi tecnica delle tipologie di quote disponibili: <br>
+    <strong>1X2, Over/Under, GG/NG, Doppia Chance, Draw No Bet, Combo</strong> e molto altro. <br>
+    L’IA spiega quando è meglio giocarle, con esempi pratici.</p>
+</div>
+
+<script>
+    function toggleContent(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
